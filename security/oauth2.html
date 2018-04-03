@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="user.html" />
+    <link rel="next" href="aa.html" />
     
     
     <link rel="prev" href="./" />
@@ -147,6 +147,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.1.4" data-path="../roadmap/0.4.html">
+            
+                <a href="../roadmap/0.4.html">
+            
+                    
+                    0.4
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -185,6 +198,19 @@
             
                     
                     0.3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../update/0.4.html">
+            
+                <a href="../update/0.4.html">
+            
+                    
+                    0.4
             
                 </a>
             
@@ -1710,12 +1736,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.2" data-path="user.html">
+        <li class="chapter " data-level="3.5.2" data-path="aa.html">
             
-                <a href="user.html">
+                <a href="aa.html">
             
                     
-                    获取用户信息
+                    身份认证和授权
             
                 </a>
             
@@ -1723,20 +1749,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.3" data-path="client.html">
-            
-                <a href="client.html">
-            
-                    
-                    获取客户端信息
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.5.4" data-path="operation.html">
+        <li class="chapter " data-level="3.5.3" data-path="operation.html">
             
                 <a href="operation.html">
             
@@ -1749,12 +1762,38 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.5" data-path="data.html">
+        <li class="chapter " data-level="3.5.4" data-path="data.html">
             
                 <a href="data.html">
             
                     
                     数据权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="user.html">
+            
+                <a href="user.html">
+            
+                    
+                    获取用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="client.html">
+            
+                <a href="client.html">
+            
+                    
+                    获取客户端信息
             
                 </a>
             
@@ -2154,7 +2193,32 @@
 </blockquote>
 </li>
 </ul>
-<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#xFF0C;<code>Leap</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>OAuth2</code>&#x670D;&#x52A1;&#x5668;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;oauth2">&#x914D;&#x7F6E;<code>OAuth2</code></h2>
+<p>&#x4FEE;&#x6539;<code>app/config.json</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x589E;&#x52A0;&#xFF1A;</p>
+<pre class="language-"><code>{
+    &quot;oauth2&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;server_url&quot;: &quot;http://localhost:8088&quot;,
+        &quot;client_id&quot;: &quot;client1&quot;,
+        &quot;client_secret&quot;: &quot;secret1&quot;
+    }
+}
+</code></pre><p>&#x5176;&#x4E2D;<code>server_url</code>&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5316;&#x914D;&#x7F6E;&#xFF0C;&#x8BBE;&#x7F6E;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E;&#x771F;&#x6B63;&#x9700;&#x8981;&#x7684;&#x4E24;&#x4E2A;&#x914D;&#x7F6E;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre class="language-"><code>authorize_url= ${server_url}/oauth2/authorize
+toekn_url= &quot;${server_url}/oauth2/token&quot;
+</code></pre><p>&#x4E5F;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x5355;&#x72EC;&#x914D;&#x7F6E;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;</p>
+<p>config.json</p>
+<pre class="language-"><code>{
+    &quot;oauth2&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;authorize_url&quot;: &quot;http://localhost:8088/oauth2/authorize&quot;,
+        &quot;token_url&quot;: &quot;http://localhost:8088/oauth2/token&quot;,        
+        &quot;client_id&quot;: &quot;client1&quot;,
+        &quot;client_secret&quot;: &quot;secret1&quot;
+    }
+}
+</code></pre><h2 id="&#x63A5;&#x5165;debug-oauth2-server&#xFF08;&#x53EF;&#x9009;&#xFF09;">&#x63A5;&#x5165;<code>Debug OAuth2 Server</code>&#xFF08;&#x53EF;&#x9009;&#xFF09;</h2>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#xFF0C;&#x53EF;&#x4EE5;&#x63A5;&#x5165;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>OAuth2</code>&#x670D;&#x52A1;&#x5668;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x3002;</p>
 <ul>
 <li>docker run&#xFF1A;</li>
 </ul>
@@ -2171,24 +2235,14 @@ $ mvn -Djetty.port<span class="token operator">=</span>8088 jetty:run
 <p><code>debug-auth-server</code>&#x5185;&#x7F6E;&#x4E86;3&#x4E2A;&#x7528;&#x6237;&#x548C;3&#x4E2A;client&#xFF1A;</p>
 <p>User : user1 pass1, user2, pass2, user3, pass3</p>
 <p>Client: client1 secret1 , client2 secret2, client3 secret3</p>
-<h2 id="&#x914D;&#x7F6E;oauth2&#x670D;&#x52A1;&#x5668;">&#x914D;&#x7F6E;<code>OAuth2</code>&#x670D;&#x52A1;&#x5668;</h2>
-<p>&#x4FEE;&#x6539;<code>app/config.json</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x589E;&#x52A0;&#xFF1A;</p>
-<pre class="language-"><code>{
-    &quot;oauth2&quot;: {
-        &quot;enabled&quot;: true,
-        &quot;server_url&quot;: &quot;http://localhost:8088&quot;,
-        &quot;client_id&quot;: &quot;client1&quot;,
-        &quot;client_secret&quot;: &quot;secret1&quot;
-    }
-}
-</code></pre><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2017-11-23 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-04-02 </span> </footer>
 <div class="ex-page-foot">
     <div class="ex-page-jump">
         
         <span class="ex-jump-prev" style="display: block;">上一篇：<a href="./">安全指南</a></span>
         
         
-        <span class="ex-jump-next">下一篇：<a href="user.html">获取用户信息</a></span>
+        <span class="ex-jump-next">下一篇：<a href="aa.html">身份认证和授权</a></span>
         
     </div>
 </div>
@@ -2223,7 +2277,7 @@ $ mvn -Djetty.port<span class="token operator">=</span>8088 jetty:run
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OAuth2接入","level":"3.5.1","depth":2,"next":{"title":"获取用户信息","level":"3.5.2","depth":2,"path":"security/user.md","ref":"security/user.md","articles":[]},"previous":{"title":"安全指南","level":"3.5","depth":1,"path":"security/README.md","ref":"security/README.md","articles":[{"title":"OAuth2接入","level":"3.5.1","depth":2,"path":"security/oauth2.md","ref":"security/oauth2.md","articles":[]},{"title":"获取用户信息","level":"3.5.2","depth":2,"path":"security/user.md","ref":"security/user.md","articles":[]},{"title":"获取客户端信息","level":"3.5.3","depth":2,"path":"security/client.md","ref":"security/client.md","articles":[]},{"title":"操作权限控制","level":"3.5.4","depth":2,"path":"security/operation.md","ref":"security/operation.md","articles":[]},{"title":"数据权限控制","level":"3.5.5","depth":2,"path":"security/data.md","ref":"security/data.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"security/oauth2.md","mtime":"2017-11-23T03:37:13.132Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-19T02:34:56.440Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OAuth2接入","level":"3.5.1","depth":2,"next":{"title":"身份认证和授权","level":"3.5.2","depth":2,"path":"security/aa.md","ref":"security/aa.md","articles":[]},"previous":{"title":"安全指南","level":"3.5","depth":1,"path":"security/README.md","ref":"security/README.md","articles":[{"title":"OAuth2接入","level":"3.5.1","depth":2,"path":"security/oauth2.md","ref":"security/oauth2.md","articles":[]},{"title":"身份认证和授权","level":"3.5.2","depth":2,"path":"security/aa.md","ref":"security/aa.md","articles":[]},{"title":"操作权限控制","level":"3.5.3","depth":2,"path":"security/operation.md","ref":"security/operation.md","articles":[]},{"title":"数据权限控制","level":"3.5.4","depth":2,"path":"security/data.md","ref":"security/data.md","articles":[]},{"title":"获取用户信息","level":"3.5.5","depth":2,"path":"security/user.md","ref":"security/user.md","articles":[]},{"title":"获取客户端信息","level":"3.5.6","depth":2,"path":"security/client.md","ref":"security/client.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"security/oauth2.md","mtime":"2018-04-02T03:00:59.515Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-03T06:28:02.921Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

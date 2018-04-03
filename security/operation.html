@@ -64,7 +64,7 @@
     <link rel="next" href="data.html" />
     
     
-    <link rel="prev" href="client.html" />
+    <link rel="prev" href="aa.html" />
     
 
     </head>
@@ -147,6 +147,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.1.4" data-path="../roadmap/0.4.html">
+            
+                <a href="../roadmap/0.4.html">
+            
+                    
+                    0.4
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -185,6 +198,19 @@
             
                     
                     0.3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../update/0.4.html">
+            
+                <a href="../update/0.4.html">
+            
+                    
+                    0.4
             
                 </a>
             
@@ -1710,12 +1736,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.2" data-path="user.html">
+        <li class="chapter " data-level="3.5.2" data-path="aa.html">
             
-                <a href="user.html">
+                <a href="aa.html">
             
                     
-                    获取用户信息
+                    身份认证和授权
             
                 </a>
             
@@ -1723,20 +1749,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.3" data-path="client.html">
-            
-                <a href="client.html">
-            
-                    
-                    获取客户端信息
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="3.5.4" data-path="operation.html">
+        <li class="chapter active" data-level="3.5.3" data-path="operation.html">
             
                 <a href="operation.html">
             
@@ -1749,12 +1762,38 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.5" data-path="data.html">
+        <li class="chapter " data-level="3.5.4" data-path="data.html">
             
                 <a href="data.html">
             
                     
                     数据权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="user.html">
+            
+                <a href="user.html">
+            
+                    
+                    获取用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="client.html">
+            
+                <a href="client.html">
+            
+                    
+                    获取客户端信息
             
                 </a>
             
@@ -2145,12 +2184,142 @@
                                 <section class="normal markdown-section">
                                 
 <h1 id="&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x63A7;&#x5236;">&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x63A7;&#x5236;</h1>
-<p>todo</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2017-11-24 </span> </footer>
+<blockquote>
+<p>Added in 0.4.0</p>
+</blockquote>
+<p>&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x63A7;&#x5236;&#x5206;&#x4E3A;&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x548C;&#x5B9E;&#x4F53;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x64CD;&#x4F5C;&#xFF0C;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x5B89;&#x5168;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#x548C;&#x63A7;&#x5236;&#x3002;</p>
+<h2 id="&#x5B89;&#x5168;&#x8868;&#x8FBE;&#x5F0F;">&#x5B89;&#x5168;&#x8868;&#x8FBE;&#x5F0F;</h2>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x53EA;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x8BBF;&#x95EE; &#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</li>
+</ul>
+<pre class="language-"><code>    security = user
+</code></pre><ul>
+<li>&#x8BBE;&#x7F6E;&#x53EA;&#x5141;&#x8BB8;&#x62E5;&#x6709;&#x67D0;&#x4E9B;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x624D;&#x80FD;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code>    security = user read
+</code></pre><blockquote>
+<p>read&#x662F;&#x6743;&#x9650;</p>
+</blockquote>
+<p>&#x591A;&#x4E2A;&#x6743;&#x9650;</p>
+<pre class="language-"><code>    security = user read write
+</code></pre><blockquote>
+<p>read write&#x662F;&#x4E24;&#x4E2A;&#x6743;&#x9650;</p>
+</blockquote>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x7AEF;&#x8EAB;&#x4EFD;&#x624D;&#x80FD;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code>    security = client
+</code></pre><ul>
+<li>&#x8BBE;&#x7F6E;&#x9700;&#x8981;&#x62E5;&#x6709;&#x67D0;&#x4E9B;&#x6743;&#x9650;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x624D;&#x80FD;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code>    security = client read write
+</code></pre><blockquote>
+<p>read write&#x662F;&#x4E24;&#x4E2A;&#x6743;&#x9650;</p>
+</blockquote>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x540C;&#x65F6;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x6216;&#x5BA2;&#x6237;&#x7AEF;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code>    security = user | client
+</code></pre><blockquote>
+<p>&#x901A;&#x8FC7;&#x7B26;&#x53F7;<code>|</code>&#x8868;&#x793A;&#x6216;</p>
+</blockquote>
+<p>&#x52A0;&#x4E0A;&#x6743;&#x9650;&#xFF1A;</p>
+<pre class="language-"><code>    security = user | client admin
+</code></pre><blockquote>
+<p>&#x8868;&#x793A;&#x7528;&#x6237;&#x767B;&#x5F55;&#x5373;&#x53EF;&#x8BBF;&#x95EE;&#xFF0C;&#x6216;&#x8005;&#x62E5;&#x6709;<code>admin</code>&#x6743;&#x9650;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;</p>
+</blockquote>
+<h3 id="&#x5168;&#x5C40;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;">&#x5168;&#x5C40;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;</h3>
+<p>config.json</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;api&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> &quot;user | client&quot;
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x8BBE;&#x7F6E;">&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x8BBE;&#x7F6E;</h3>
+<p><code>app/operations/@get.js</code>&#xFF1A;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x6388;&#x6743;</li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token comment" spellcheck="true">/**
+ * @security client admin
+ */</span>
+<span class="token keyword">function</span> <span class="token function">_</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>&#x5141;&#x8BB8;&#x533F;&#x540D;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token comment" spellcheck="true">/**
+ * @anonymous
+ */</span>
+<span class="token keyword">function</span> <span class="token function">_</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x5B9E;&#x4F53;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x64CD;&#x4F5C;&#x8BBE;&#x7F6E;">&#x5B9E;&#x4F53;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x64CD;&#x4F5C;&#x8BBE;&#x7F6E;</h3>
+<p><strong>&#x6743;&#x9650;&#x6620;&#x5C04;</strong>&#xFF1A;</p>
+<ul>
+<li>read : &#x6620;&#x5C04;&#x5230; find, query &#x64CD;&#x4F5C;</li>
+<li>write : &#x6620;&#x5C04;&#x5230; create, update, delete &#x64CD;&#x4F5C;</li>
+</ul>
+<p><strong>&#x8BBE;&#x7F6E;&#x6743;&#x9650;</strong>&#xFF1A;</p>
+<p>&#x4E0B;&#x9762;&#x4EE5;&#x5B9E;&#x4F53;<code>Book</code>&#x8FDB;&#x884C;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x5141;&#x8BB8;&#x533F;&#x540D;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;anonymous&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>&#x6709;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x6216;&#x5BA2;&#x6237;&#x7AEF;&#x8EAB;&#x4EFD;&#x5373;&#x53EF;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> &quot;user | client&quot;
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>&#x8BBF;&#x95EE;&#x8BFB;&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x8981;<code>Read</code>&#x6743;&#x9650;&#xFF0C;&#x8BBF;&#x95EE;&#x5199;&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x8981;<code>Write</code>&#x6743;&#x9650;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user Read Write&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>&#x8BBF;&#x95EE;&#x8BFB;&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x8981;<code>Book.Read</code>&#x6743;&#x9650;&#xFF0C;&#x8BBF;&#x95EE;&#x5199;&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x8981;<code>Book.Write</code>&#x6743;&#x9650;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user {Entity}.Read {Entity}.Write&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>&#x8BBF;&#x95EE;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x8981;<code>Book</code>&#x6743;&#x9650;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user {Entity}&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+</blockquote>
+<ul>
+<li>&#x8BBF;&#x95EE;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x65F6;&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;<code>admin</code>&#x6743;&#x9650;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> &quot;user | client admin&quot;
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>&#x8BBF;&#x95EE;&#x5199;&#x64CD;&#x4F5C;&#x65F6;&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;<code>admin</code>&#x6743;&#x9650;</li>
+</ul>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span> &quot;user | client write=admin&quot;
+<span class="token punctuation">}</span>
+</code></pre>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-04-03 </span> </footer>
 <div class="ex-page-foot">
     <div class="ex-page-jump">
         
-        <span class="ex-jump-prev" style="display: block;">上一篇：<a href="client.html">获取客户端信息</a></span>
+        <span class="ex-jump-prev" style="display: block;">上一篇：<a href="aa.html">身份认证和授权</a></span>
         
         
         <span class="ex-jump-next">下一篇：<a href="data.html">数据权限控制</a></span>
@@ -2188,7 +2357,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"操作权限控制","level":"3.5.4","depth":2,"next":{"title":"数据权限控制","level":"3.5.5","depth":2,"path":"security/data.md","ref":"security/data.md","articles":[]},"previous":{"title":"获取客户端信息","level":"3.5.3","depth":2,"path":"security/client.md","ref":"security/client.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"security/operation.md","mtime":"2017-11-24T06:26:54.076Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-19T02:34:56.440Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"操作权限控制","level":"3.5.3","depth":2,"next":{"title":"数据权限控制","level":"3.5.4","depth":2,"path":"security/data.md","ref":"security/data.md","articles":[]},"previous":{"title":"身份认证和授权","level":"3.5.2","depth":2,"path":"security/aa.md","ref":"security/aa.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"security/operation.md","mtime":"2018-04-03T05:49:52.598Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-03T06:28:02.921Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
