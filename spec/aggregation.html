@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>基础模块 · jmms微服务设计开发指南</title>
+        <title>数据聚合 · jmms微服务设计开发指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -12,32 +12,32 @@
         
         
     
-    <link rel="stylesheet" href="../../../gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/style.css">
 
     
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
                 
             
         
@@ -46,7 +46,7 @@
 
     
         
-        <link rel="stylesheet" href="../../../styles/website.css">
+        <link rel="stylesheet" href="../styles/website.css">
         
     
 
@@ -57,14 +57,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="utils.html" />
+    <link rel="next" href="select.html" />
     
     
-    <link rel="prev" href="../data_access.html" />
+    <link rel="prev" href="sorting.html" />
     
 
     </head>
@@ -94,9 +94,9 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="../../../roadmap/">
+        <li class="chapter " data-level="1.1" data-path="../roadmap/">
             
-                <a href="../../../roadmap/">
+                <a href="../roadmap/">
             
                     
                     版本记录
@@ -108,9 +108,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="../../../roadmap/0.1.html">
+        <li class="chapter " data-level="1.1.1" data-path="../roadmap/0.1.html">
             
-                <a href="../../../roadmap/0.1.html">
+                <a href="../roadmap/0.1.html">
             
                     
                     0.1
@@ -121,9 +121,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2" data-path="../../../roadmap/0.2.html">
+        <li class="chapter " data-level="1.1.2" data-path="../roadmap/0.2.html">
             
-                <a href="../../../roadmap/0.2.html">
+                <a href="../roadmap/0.2.html">
             
                     
                     0.2
@@ -134,9 +134,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.3" data-path="../../../roadmap/0.3.html">
+        <li class="chapter " data-level="1.1.3" data-path="../roadmap/0.3.html">
             
-                <a href="../../../roadmap/0.3.html">
+                <a href="../roadmap/0.3.html">
             
                     
                     0.3
@@ -147,9 +147,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.4" data-path="../../../roadmap/0.4.html">
+        <li class="chapter " data-level="1.1.4" data-path="../roadmap/0.4.html">
             
-                <a href="../../../roadmap/0.4.html">
+                <a href="../roadmap/0.4.html">
             
                     
                     0.4
@@ -179,9 +179,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../../../update/0.2.html">
+        <li class="chapter " data-level="1.2.1" data-path="../update/0.2.html">
             
-                <a href="../../../update/0.2.html">
+                <a href="../update/0.2.html">
             
                     
                     0.2
@@ -192,9 +192,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../../../update/0.3.html">
+        <li class="chapter " data-level="1.2.2" data-path="../update/0.3.html">
             
-                <a href="../../../update/0.3.html">
+                <a href="../update/0.3.html">
             
                     
                     0.3
@@ -205,9 +205,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../../../update/0.4.html">
+        <li class="chapter " data-level="1.2.3" data-path="../update/0.4.html">
             
-                <a href="../../../update/0.4.html">
+                <a href="../update/0.4.html">
             
                     
                     0.4
@@ -230,9 +230,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../../../">
+        <li class="chapter " data-level="2.1" data-path="../">
             
-                <a href="../../../">
+                <a href="../">
             
                     
                     概述
@@ -243,9 +243,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../../../gs.html">
+        <li class="chapter " data-level="2.2" data-path="../gs.html">
             
-                <a href="../../../gs.html">
+                <a href="../gs.html">
             
                     
                     快速开始
@@ -256,9 +256,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../../../proj.html">
+        <li class="chapter " data-level="2.3" data-path="../proj.html">
             
-                <a href="../../../proj.html">
+                <a href="../proj.html">
             
                     
                     工程结构
@@ -269,9 +269,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="../../../first/">
+        <li class="chapter " data-level="2.4" data-path="../first/">
             
-                <a href="../../../first/">
+                <a href="../first/">
             
                     
                     第一个微服务
@@ -283,9 +283,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.1" data-path="../../../first/create_proj.html">
+        <li class="chapter " data-level="2.4.1" data-path="../first/create_proj.html">
             
-                <a href="../../../first/create_proj.html">
+                <a href="../first/create_proj.html">
             
                     
                     创建工程和运行
@@ -296,9 +296,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.2" data-path="../../../first/create_entity.html">
+        <li class="chapter " data-level="2.4.2" data-path="../first/create_entity.html">
             
-                <a href="../../../first/create_entity.html">
+                <a href="../first/create_entity.html">
             
                     
                     创建实体模型
@@ -309,9 +309,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.3" data-path="../../../first/crud.html">
+        <li class="chapter " data-level="2.4.3" data-path="../first/crud.html">
             
-                <a href="../../../first/crud.html">
+                <a href="../first/crud.html">
             
                     
                     生成增删改查操作
@@ -322,9 +322,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.4" data-path="../../../first/custom_operation.html">
+        <li class="chapter " data-level="2.4.4" data-path="../first/custom_operation.html">
             
-                <a href="../../../first/custom_operation.html">
+                <a href="../first/custom_operation.html">
             
                     
                     开发自定义操作
@@ -336,9 +336,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.4.1" data-path="../../../first/sql_operation.html">
+        <li class="chapter " data-level="2.4.4.1" data-path="../first/sql_operation.html">
             
-                <a href="../../../first/sql_operation.html">
+                <a href="../first/sql_operation.html">
             
                     
                     基于SQL开发
@@ -349,9 +349,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.4.2" data-path="../../../first/js_operation.html">
+        <li class="chapter " data-level="2.4.4.2" data-path="../first/js_operation.html">
             
-                <a href="../../../first/js_operation.html">
+                <a href="../first/js_operation.html">
             
                     
                     基于Javascript开发
@@ -367,9 +367,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.5" data-path="../../../first/package.html">
+        <li class="chapter " data-level="2.4.5" data-path="../first/package.html">
             
-                <a href="../../../first/package.html">
+                <a href="../first/package.html">
             
                     
                     打包运行
@@ -392,9 +392,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../../../design/">
+        <li class="chapter " data-level="3.1" data-path="../design/">
             
-                <a href="../../../design/">
+                <a href="../design/">
             
                     
                     设计指南
@@ -406,9 +406,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="../../../spec/">
+        <li class="chapter " data-level="3.1.1" data-path="./">
             
-                <a href="../../../spec/">
+                <a href="./">
             
                     
                     API规范
@@ -420,9 +420,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1.1" data-path="../../../spec/errors.html">
+        <li class="chapter " data-level="3.1.1.1" data-path="errors.html">
             
-                <a href="../../../spec/errors.html">
+                <a href="errors.html">
             
                     
                     错误处理
@@ -433,9 +433,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.2" data-path="../../../spec/authc.html">
+        <li class="chapter " data-level="3.1.1.2" data-path="authc.html">
             
-                <a href="../../../spec/authc.html">
+                <a href="authc.html">
             
                     
                     身份认证
@@ -446,9 +446,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.3" data-path="../../../spec/cors.html">
+        <li class="chapter " data-level="3.1.1.3" data-path="cors.html">
             
-                <a href="../../../spec/cors.html">
+                <a href="cors.html">
             
                     
                     CORS
@@ -459,9 +459,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.4" data-path="../../../spec/jsonp.html">
+        <li class="chapter " data-level="3.1.1.4" data-path="jsonp.html">
             
-                <a href="../../../spec/jsonp.html">
+                <a href="jsonp.html">
             
                     
                     JSONP
@@ -472,9 +472,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.5" data-path="../../../spec/pagination.html">
+        <li class="chapter " data-level="3.1.1.5" data-path="pagination.html">
             
-                <a href="../../../spec/pagination.html">
+                <a href="pagination.html">
             
                     
                     数据分页
@@ -485,9 +485,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.6" data-path="../../../spec/filtering.html">
+        <li class="chapter " data-level="3.1.1.6" data-path="filtering.html">
             
-                <a href="../../../spec/filtering.html">
+                <a href="filtering.html">
             
                     
                     数据过滤
@@ -498,9 +498,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.7" data-path="../../../spec/sorting.html">
+        <li class="chapter " data-level="3.1.1.7" data-path="sorting.html">
             
-                <a href="../../../spec/sorting.html">
+                <a href="sorting.html">
             
                     
                     数据排序
@@ -511,9 +511,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.8" data-path="../../../spec/aggregation.html">
+        <li class="chapter active" data-level="3.1.1.8" data-path="aggregation.html">
             
-                <a href="../../../spec/aggregation.html">
+                <a href="aggregation.html">
             
                     
                     数据聚合
@@ -524,9 +524,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.9" data-path="../../../spec/select.html">
+        <li class="chapter " data-level="3.1.1.9" data-path="select.html">
             
-                <a href="../../../spec/select.html">
+                <a href="select.html">
             
                     
                     字段选择
@@ -537,9 +537,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.10" data-path="../../../spec/expand.html">
+        <li class="chapter " data-level="3.1.1.10" data-path="expand.html">
             
-                <a href="../../../spec/expand.html">
+                <a href="expand.html">
             
                     
                     级联查询
@@ -555,9 +555,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="../../../design/em/">
+        <li class="chapter " data-level="3.1.2" data-path="../design/em/">
             
-                <a href="../../../design/em/">
+                <a href="../design/em/">
             
                     
                     实体定义
@@ -569,9 +569,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.2.1" data-path="../../../design/em/fields.html">
+        <li class="chapter " data-level="3.1.2.1" data-path="../design/em/fields.html">
             
-                <a href="../../../design/em/fields.html">
+                <a href="../design/em/fields.html">
             
                     
                     字段定义
@@ -583,9 +583,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.2.1.1" data-path="../../../design/em/field_props.html">
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../design/em/field_props.html">
             
-                <a href="../../../design/em/field_props.html">
+                <a href="../design/em/field_props.html">
             
                     
                     字段属性
@@ -596,9 +596,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.1.2" data-path="../../../design/em/field_expr.html">
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../design/em/field_expr.html">
             
-                <a href="../../../design/em/field_expr.html">
+                <a href="../design/em/field_expr.html">
             
                     
                     字段表达式
@@ -609,9 +609,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.1.3" data-path="../../../design/em/field_options.html">
+        <li class="chapter " data-level="3.1.2.1.3" data-path="../design/em/field_options.html">
             
-                <a href="../../../design/em/field_options.html">
+                <a href="../design/em/field_options.html">
             
                     
                     字段选项集
@@ -622,9 +622,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.1.4" data-path="../../../design/em/field_validate.html">
+        <li class="chapter " data-level="3.1.2.1.4" data-path="../design/em/field_validate.html">
             
-                <a href="../../../design/em/field_validate.html">
+                <a href="../design/em/field_validate.html">
             
                     
                     字段验证
@@ -635,9 +635,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.1.5" data-path="../../../design/em/field_types.html">
+        <li class="chapter " data-level="3.1.2.1.5" data-path="../design/em/field_types.html">
             
-                <a href="../../../design/em/field_types.html">
+                <a href="../design/em/field_types.html">
             
                     
                     字段类型
@@ -648,9 +648,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.1.6" data-path="../../../design/em/field_formats.html">
+        <li class="chapter " data-level="3.1.2.1.6" data-path="../design/em/field_formats.html">
             
-                <a href="../../../design/em/field_formats.html">
+                <a href="../design/em/field_formats.html">
             
                     
                     字段格式
@@ -666,9 +666,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.2" data-path="../../../design/em/relations.html">
+        <li class="chapter " data-level="3.1.2.2" data-path="../design/em/relations.html">
             
-                <a href="../../../design/em/relations.html">
+                <a href="../design/em/relations.html">
             
                     
                     关系定义
@@ -680,9 +680,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.2.2.1" data-path="../../../design/em/many_to_one.html">
+        <li class="chapter " data-level="3.1.2.2.1" data-path="../design/em/many_to_one.html">
             
-                <a href="../../../design/em/many_to_one.html">
+                <a href="../design/em/many_to_one.html">
             
                     
                     多对一关系
@@ -693,9 +693,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.2.2" data-path="../../../design/em/one_to_many.html">
+        <li class="chapter " data-level="3.1.2.2.2" data-path="../design/em/one_to_many.html">
             
-                <a href="../../../design/em/one_to_many.html">
+                <a href="../design/em/one_to_many.html">
             
                     
                     一对多关系
@@ -706,9 +706,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.2.3" data-path="../../../design/em/many_to_many.html">
+        <li class="chapter " data-level="3.1.2.2.3" data-path="../design/em/many_to_many.html">
             
-                <a href="../../../design/em/many_to_many.html">
+                <a href="../design/em/many_to_many.html">
             
                     
                     多对多关系
@@ -724,9 +724,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2.3" data-path="../../../design/em/remote.html">
+        <li class="chapter " data-level="3.1.2.3" data-path="../design/em/remote.html">
             
-                <a href="../../../design/em/remote.html">
+                <a href="../design/em/remote.html">
             
                     
                     远程实体
@@ -742,9 +742,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="../../../design/api/">
+        <li class="chapter " data-level="3.1.3" data-path="../design/api/">
             
-                <a href="../../../design/api/">
+                <a href="../design/api/">
             
                     
                     API定义
@@ -756,9 +756,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.3.1" data-path="../../../design/api/info.html">
+        <li class="chapter " data-level="3.1.3.1" data-path="../design/api/info.html">
             
-                <a href="../../../design/api/info.html">
+                <a href="../design/api/info.html">
             
                     
                     API信息
@@ -769,9 +769,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.2" data-path="../../../design/api/doc.html">
+        <li class="chapter " data-level="3.1.3.2" data-path="../design/api/doc.html">
             
-                <a href="../../../design/api/doc.html">
+                <a href="../design/api/doc.html">
             
                     
                     API文档
@@ -782,9 +782,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.3" data-path="../../../design/api/model.html">
+        <li class="chapter " data-level="3.1.3.3" data-path="../design/api/model.html">
             
-                <a href="../../../design/api/model.html">
+                <a href="../design/api/model.html">
             
                     
                     API模型
@@ -795,9 +795,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.4" data-path="../../../design/api/operation.html">
+        <li class="chapter " data-level="3.1.3.4" data-path="../design/api/operation.html">
             
-                <a href="../../../design/api/operation.html">
+                <a href="../design/api/operation.html">
             
                     
                     API操作
@@ -808,9 +808,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.5" data-path="../../../design/api/tags.html">
+        <li class="chapter " data-level="3.1.3.5" data-path="../design/api/tags.html">
             
-                <a href="../../../design/api/tags.html">
+                <a href="../design/api/tags.html">
             
                     
                     API标签
@@ -835,9 +835,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.3.6.1" data-path="../../../design/api/tag_method.html">
+        <li class="chapter " data-level="3.1.3.6.1" data-path="../design/api/tag_method.html">
             
-                <a href="../../../design/api/tag_method.html">
+                <a href="../design/api/tag_method.html">
             
                     
                     @{METHOD}
@@ -848,9 +848,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.6.2" data-path="../../../design/api/tag_anonymous.html">
+        <li class="chapter " data-level="3.1.3.6.2" data-path="../design/api/tag_anonymous.html">
             
-                <a href="../../../design/api/tag_anonymous.html">
+                <a href="../design/api/tag_anonymous.html">
             
                     
                     @anonymous
@@ -861,9 +861,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.6.3" data-path="../../../design/api/tag_tags.html">
+        <li class="chapter " data-level="3.1.3.6.3" data-path="../design/api/tag_tags.html">
             
-                <a href="../../../design/api/tag_tags.html">
+                <a href="../design/api/tag_tags.html">
             
                     
                     @tags
@@ -874,9 +874,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.6.4" data-path="../../../design/api/tag_param.html">
+        <li class="chapter " data-level="3.1.3.6.4" data-path="../design/api/tag_param.html">
             
-                <a href="../../../design/api/tag_param.html">
+                <a href="../design/api/tag_param.html">
             
                     
                     @param
@@ -887,9 +887,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.6.5" data-path="../../../design/api/tag_param_include.html">
+        <li class="chapter " data-level="3.1.3.6.5" data-path="../design/api/tag_param_include.html">
             
-                <a href="../../../design/api/tag_param_include.html">
+                <a href="../design/api/tag_param_include.html">
             
                     
                     @param-include
@@ -900,9 +900,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.6.6" data-path="../../../design/api/tag_returns.html">
+        <li class="chapter " data-level="3.1.3.6.6" data-path="../design/api/tag_returns.html">
             
-                <a href="../../../design/api/tag_returns.html">
+                <a href="../design/api/tag_returns.html">
             
                     
                     @returns
@@ -913,9 +913,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.6.7" data-path="../../../design/api/tag_returns_include.html">
+        <li class="chapter " data-level="3.1.3.6.7" data-path="../design/api/tag_returns_include.html">
             
-                <a href="../../../design/api/tag_returns_include.html">
+                <a href="../design/api/tag_returns_include.html">
             
                     
                     @returns-include
@@ -931,9 +931,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.7" data-path="../../../design/data_types.html">
+        <li class="chapter " data-level="3.1.3.7" data-path="../design/data_types.html">
             
-                <a href="../../../design/data_types.html">
+                <a href="../design/data_types.html">
             
                     
                     参考:data types
@@ -944,9 +944,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3.8" data-path="../../../design/location.html">
+        <li class="chapter " data-level="3.1.3.8" data-path="../design/location.html">
             
-                <a href="../../../design/location.html">
+                <a href="../design/location.html">
             
                     
                     参考:location
@@ -981,9 +981,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.2.1" data-path="../../../conf/properties.html">
+        <li class="chapter " data-level="3.2.1" data-path="../conf/properties.html">
             
-                <a href="../../../conf/properties.html">
+                <a href="../conf/properties.html">
             
                     
                     属性配置
@@ -994,9 +994,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.2" data-path="../../../conf/profile.html">
+        <li class="chapter " data-level="3.2.2" data-path="../conf/profile.html">
             
-                <a href="../../../conf/profile.html">
+                <a href="../conf/profile.html">
             
                     
                     环境切换
@@ -1007,9 +1007,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.3" data-path="../../../conf/db.html">
+        <li class="chapter " data-level="3.2.3" data-path="../conf/db.html">
             
-                <a href="../../../conf/db.html">
+                <a href="../conf/db.html">
             
                     
                     数据库配置
@@ -1020,9 +1020,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.4" data-path="../../../conf/server.html">
+        <li class="chapter " data-level="3.2.4" data-path="../conf/server.html">
             
-                <a href="../../../conf/server.html">
+                <a href="../conf/server.html">
             
                     
                     服务器配置
@@ -1033,9 +1033,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.5" data-path="../../../conf/api.html">
+        <li class="chapter " data-level="3.2.5" data-path="../conf/api.html">
             
-                <a href="../../../conf/api.html">
+                <a href="../conf/api.html">
             
                     
                     API配置
@@ -1065,9 +1065,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.3.1" data-path="../../../db/console.html">
+        <li class="chapter " data-level="3.3.1" data-path="../db/console.html">
             
-                <a href="../../../db/console.html">
+                <a href="../db/console.html">
             
                     
                     数据库控制台
@@ -1078,9 +1078,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.2" data-path="../../../db/migration.html">
+        <li class="chapter " data-level="3.3.2" data-path="../db/migration.html">
             
-                <a href="../../../db/migration.html">
+                <a href="../db/migration.html">
             
                     
                     数据库迁移
@@ -1091,9 +1091,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.3" data-path="../../../db/pool.html">
+        <li class="chapter " data-level="3.3.3" data-path="../db/pool.html">
             
-                <a href="../../../db/pool.html">
+                <a href="../db/pool.html">
             
                     
                     数据库连接池
@@ -1104,9 +1104,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.4" data-path="../../../db/gen.html">
+        <li class="chapter " data-level="3.3.4" data-path="../db/gen.html">
             
-                <a href="../../../db/gen.html">
+                <a href="../db/gen.html">
             
                     
                     数据库反向生成实体
@@ -1122,9 +1122,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../../">
+        <li class="chapter " data-level="3.4" data-path="../dev/">
             
-                <a href="../../">
+                <a href="../dev/">
             
                     
                     开发指南
@@ -1136,9 +1136,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.1" data-path="../../gen/">
+        <li class="chapter " data-level="3.4.1" data-path="../dev/gen/">
             
-                <a href="../../gen/">
+                <a href="../dev/gen/">
             
                     
                     自动生成
@@ -1150,9 +1150,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.1.1" data-path="../../gen/create.html">
+        <li class="chapter " data-level="3.4.1.1" data-path="../dev/gen/create.html">
             
-                <a href="../../gen/create.html">
+                <a href="../dev/gen/create.html">
             
                     
                     单行创建
@@ -1163,9 +1163,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.1.2" data-path="../../gen/update.html">
+        <li class="chapter " data-level="3.4.1.2" data-path="../dev/gen/update.html">
             
-                <a href="../../gen/update.html">
+                <a href="../dev/gen/update.html">
             
                     
                     单行更新
@@ -1176,9 +1176,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.1.3" data-path="../../gen/delete.html">
+        <li class="chapter " data-level="3.4.1.3" data-path="../dev/gen/delete.html">
             
-                <a href="../../gen/delete.html">
+                <a href="../dev/gen/delete.html">
             
                     
                     单行删除
@@ -1189,9 +1189,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.1.4" data-path="../../gen/find.html">
+        <li class="chapter " data-level="3.4.1.4" data-path="../dev/gen/find.html">
             
-                <a href="../../gen/find.html">
+                <a href="../dev/gen/find.html">
             
                     
                     单行查询
@@ -1202,9 +1202,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.1.5" data-path="../../gen/query.html">
+        <li class="chapter " data-level="3.4.1.5" data-path="../dev/gen/query.html">
             
-                <a href="../../gen/query.html">
+                <a href="../dev/gen/query.html">
             
                     
                     多行查询
@@ -1220,9 +1220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.2" data-path="../../sql/">
+        <li class="chapter " data-level="3.4.2" data-path="../dev/sql/">
             
-                <a href="../../sql/">
+                <a href="../dev/sql/">
             
                     
                     使用SQL开发
@@ -1233,9 +1233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3" data-path="../">
+        <li class="chapter " data-level="3.4.3" data-path="../dev/js/">
             
-                <a href="../">
+                <a href="../dev/js/">
             
                     
                     使用Javascript开发
@@ -1247,9 +1247,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.3.1" data-path="../operation.html">
+        <li class="chapter " data-level="3.4.3.1" data-path="../dev/js/operation.html">
             
-                <a href="../operation.html">
+                <a href="../dev/js/operation.html">
             
                     
                     API操作
@@ -1260,9 +1260,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2" data-path="../vars/">
+        <li class="chapter " data-level="3.4.3.2" data-path="../dev/js/vars/">
             
-                <a href="../vars/">
+                <a href="../dev/js/vars/">
             
                     
                     全局变量
@@ -1274,9 +1274,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.3.2.1" data-path="../vars/console.html">
+        <li class="chapter " data-level="3.4.3.2.1" data-path="../dev/js/vars/console.html">
             
-                <a href="../vars/console.html">
+                <a href="../dev/js/vars/console.html">
             
                     
                     console
@@ -1287,9 +1287,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2.2" data-path="../vars/log.html">
+        <li class="chapter " data-level="3.4.3.2.2" data-path="../dev/js/vars/log.html">
             
-                <a href="../vars/log.html">
+                <a href="../dev/js/vars/log.html">
             
                     
                     log
@@ -1300,9 +1300,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2.3" data-path="../vars/config.html">
+        <li class="chapter " data-level="3.4.3.2.3" data-path="../dev/js/vars/config.html">
             
-                <a href="../vars/config.html">
+                <a href="../dev/js/vars/config.html">
             
                     
                     $config
@@ -1313,9 +1313,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2.4" data-path="../vars/params.html">
+        <li class="chapter " data-level="3.4.3.2.4" data-path="../dev/js/vars/params.html">
             
-                <a href="../vars/params.html">
+                <a href="../dev/js/vars/params.html">
             
                     
                     $params
@@ -1326,9 +1326,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2.5" data-path="../vars/user.html">
+        <li class="chapter " data-level="3.4.3.2.5" data-path="../dev/js/vars/user.html">
             
-                <a href="../vars/user.html">
+                <a href="../dev/js/vars/user.html">
             
                     
                     $user
@@ -1339,9 +1339,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2.6" data-path="../vars/client.html">
+        <li class="chapter " data-level="3.4.3.2.6" data-path="../dev/js/vars/client.html">
             
-                <a href="../vars/client.html">
+                <a href="../dev/js/vars/client.html">
             
                     
                     $client
@@ -1352,9 +1352,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.2.7" data-path="../vars/response.html">
+        <li class="chapter " data-level="3.4.3.2.7" data-path="../dev/js/vars/response.html">
             
-                <a href="../vars/response.html">
+                <a href="../dev/js/vars/response.html">
             
                     
                     Response
@@ -1370,9 +1370,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.3" data-path="../require.html">
+        <li class="chapter " data-level="3.4.3.3" data-path="../dev/js/require.html">
             
-                <a href="../require.html">
+                <a href="../dev/js/require.html">
             
                     
                     调用模块
@@ -1384,9 +1384,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.3.3.1" data-path="../npm.html">
+        <li class="chapter " data-level="3.4.3.3.1" data-path="../dev/js/npm.html">
             
-                <a href="../npm.html">
+                <a href="../dev/js/npm.html">
             
                     
                     调用npm模块
@@ -1402,9 +1402,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.4" data-path="../data_access.html">
+        <li class="chapter " data-level="3.4.3.4" data-path="../dev/js/data_access.html">
             
-                <a href="../data_access.html">
+                <a href="../dev/js/data_access.html">
             
                     
                     数据访问
@@ -1415,9 +1415,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.4.3.5" data-path="./">
+        <li class="chapter " data-level="3.4.3.5" data-path="../dev/js/modules/">
             
-                <a href="./">
+                <a href="../dev/js/modules/">
             
                     
                     基础模块
@@ -1429,9 +1429,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.3.5.1" data-path="utils.html">
+        <li class="chapter " data-level="3.4.3.5.1" data-path="../dev/js/modules/utils.html">
             
-                <a href="utils.html">
+                <a href="../dev/js/modules/utils.html">
             
                     
                     utils
@@ -1442,9 +1442,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.5.2" data-path="dao.html">
+        <li class="chapter " data-level="3.4.3.5.2" data-path="../dev/js/modules/dao.html">
             
-                <a href="dao.html">
+                <a href="../dev/js/modules/dao.html">
             
                     
                     dao
@@ -1455,9 +1455,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.5.3" data-path="entity.html">
+        <li class="chapter " data-level="3.4.3.5.3" data-path="../dev/js/modules/entity.html">
             
-                <a href="entity.html">
+                <a href="../dev/js/modules/entity.html">
             
                     
                     {Entity}
@@ -1468,9 +1468,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.5.4" data-path="http.html">
+        <li class="chapter " data-level="3.4.3.5.4" data-path="../dev/js/modules/http.html">
             
-                <a href="http.html">
+                <a href="../dev/js/modules/http.html">
             
                     
                     http
@@ -1481,9 +1481,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.3.5.5" data-path="oauth2.html">
+        <li class="chapter " data-level="3.4.3.5.5" data-path="../dev/js/modules/oauth2.html">
             
-                <a href="oauth2.html">
+                <a href="../dev/js/modules/oauth2.html">
             
                     
                     oauth2
@@ -1504,9 +1504,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4" data-path="../../spring/">
+        <li class="chapter " data-level="3.4.4" data-path="../dev/spring/">
             
-                <a href="../../spring/">
+                <a href="../dev/spring/">
             
                     
                     使用Spring Boot开发
@@ -1518,9 +1518,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.4.1" data-path="../../spring/init_proj.html">
+        <li class="chapter " data-level="3.4.4.1" data-path="../dev/spring/init_proj.html">
             
-                <a href="../../spring/init_proj.html">
+                <a href="../dev/spring/init_proj.html">
             
                     
                     初始化工程
@@ -1531,9 +1531,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.2" data-path="../../spring/api_operation.html">
+        <li class="chapter " data-level="3.4.4.2" data-path="../dev/spring/api_operation.html">
             
-                <a href="../../spring/api_operation.html">
+                <a href="../dev/spring/api_operation.html">
             
                     
                     开发API操作
@@ -1544,9 +1544,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.3" data-path="../../spring/entity.html">
+        <li class="chapter " data-level="3.4.4.3" data-path="../dev/spring/entity.html">
             
-                <a href="../../spring/entity.html">
+                <a href="../dev/spring/entity.html">
             
                     
                     实体定义
@@ -1558,9 +1558,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.4.3.1" data-path="../../spring/entity_table.html">
+        <li class="chapter " data-level="3.4.4.3.1" data-path="../dev/spring/entity_table.html">
             
-                <a href="../../spring/entity_table.html">
+                <a href="../dev/spring/entity_table.html">
             
                     
                     定义表名
@@ -1571,9 +1571,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.3.2" data-path="../../spring/entity_column.html">
+        <li class="chapter " data-level="3.4.4.3.2" data-path="../dev/spring/entity_column.html">
             
-                <a href="../../spring/entity_column.html">
+                <a href="../dev/spring/entity_column.html">
             
                     
                     定义字段
@@ -1584,9 +1584,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.3.3" data-path="../../spring/entity_relation.html">
+        <li class="chapter " data-level="3.4.4.3.3" data-path="../dev/spring/entity_relation.html">
             
-                <a href="../../spring/entity_relation.html">
+                <a href="../dev/spring/entity_relation.html">
             
                     
                     定义关系
@@ -1602,9 +1602,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.4" data-path="../../spring/model.html">
+        <li class="chapter " data-level="3.4.4.4" data-path="../dev/spring/model.html">
             
-                <a href="../../spring/model.html">
+                <a href="../dev/spring/model.html">
             
                     
                     模型定义
@@ -1615,9 +1615,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.5" data-path="../../spring/data.html">
+        <li class="chapter " data-level="3.4.4.5" data-path="../dev/spring/data.html">
             
-                <a href="../../spring/data.html">
+                <a href="../dev/spring/data.html">
             
                     
                     数据访问
@@ -1629,9 +1629,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.4.5.1" data-path="../../spring/dao.html">
+        <li class="chapter " data-level="3.4.4.5.1" data-path="../dev/spring/dao.html">
             
-                <a href="../../spring/dao.html">
+                <a href="../dev/spring/dao.html">
             
                     
                     基础访问接口
@@ -1642,9 +1642,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.5.2" data-path="../../spring/crud.html">
+        <li class="chapter " data-level="3.4.4.5.2" data-path="../dev/spring/crud.html">
             
-                <a href="../../spring/crud.html">
+                <a href="../dev/spring/crud.html">
             
                     
                     实体增删改查
@@ -1660,9 +1660,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.6" data-path="../../spring/js.html">
+        <li class="chapter " data-level="3.4.4.6" data-path="../dev/spring/js.html">
             
-                <a href="../../spring/js.html">
+                <a href="../dev/spring/js.html">
             
                     
                     Javascript互操作
@@ -1673,9 +1673,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.4.7" data-path="../../spring/exception.html">
+        <li class="chapter " data-level="3.4.4.7" data-path="../dev/spring/exception.html">
             
-                <a href="../../spring/exception.html">
+                <a href="../dev/spring/exception.html">
             
                     
                     异常处理
@@ -1691,9 +1691,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.5" data-path="../../comm/sqls.html">
+        <li class="chapter " data-level="3.4.5" data-path="../dev/comm/sqls.html">
             
-                <a href="../../comm/sqls.html">
+                <a href="../dev/comm/sqls.html">
             
                     
                     参考:命名SQL
@@ -1704,9 +1704,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.6" data-path="../../comm/env.html">
+        <li class="chapter " data-level="3.4.6" data-path="../dev/comm/env.html">
             
-                <a href="../../comm/env.html">
+                <a href="../dev/comm/env.html">
             
                     
                     参考:环境变量
@@ -1722,9 +1722,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="../../../security/">
+        <li class="chapter " data-level="3.5" data-path="../security/">
             
-                <a href="../../../security/">
+                <a href="../security/">
             
                     
                     安全指南
@@ -1736,9 +1736,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.5.1" data-path="../../../security/oauth2.html">
+        <li class="chapter " data-level="3.5.1" data-path="../security/oauth2.html">
             
-                <a href="../../../security/oauth2.html">
+                <a href="../security/oauth2.html">
             
                     
                     OAuth2接入
@@ -1749,9 +1749,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.2" data-path="../../../security/aa.html">
+        <li class="chapter " data-level="3.5.2" data-path="../security/aa.html">
             
-                <a href="../../../security/aa.html">
+                <a href="../security/aa.html">
             
                     
                     身份认证和授权
@@ -1762,9 +1762,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.3" data-path="../../../security/operation.html">
+        <li class="chapter " data-level="3.5.3" data-path="../security/operation.html">
             
-                <a href="../../../security/operation.html">
+                <a href="../security/operation.html">
             
                     
                     操作权限控制
@@ -1775,9 +1775,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.4" data-path="../../../security/data.html">
+        <li class="chapter " data-level="3.5.4" data-path="../security/data.html">
             
-                <a href="../../../security/data.html">
+                <a href="../security/data.html">
             
                     
                     数据权限控制
@@ -1788,9 +1788,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.5" data-path="../../../security/user.html">
+        <li class="chapter " data-level="3.5.5" data-path="../security/user.html">
             
-                <a href="../../../security/user.html">
+                <a href="../security/user.html">
             
                     
                     获取用户信息
@@ -1801,9 +1801,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.6" data-path="../../../security/client.html">
+        <li class="chapter " data-level="3.5.6" data-path="../security/client.html">
             
-                <a href="../../../security/client.html">
+                <a href="../security/client.html">
             
                     
                     获取客户端信息
@@ -1819,9 +1819,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="../../../test/">
+        <li class="chapter " data-level="3.6" data-path="../test/">
             
-                <a href="../../../test/">
+                <a href="../test/">
             
                     
                     测试指南
@@ -1846,9 +1846,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.7.1" data-path="../../../deploy/jar.html">
+        <li class="chapter " data-level="3.7.1" data-path="../deploy/jar.html">
             
-                <a href="../../../deploy/jar.html">
+                <a href="../deploy/jar.html">
             
                     
                     Jar部署
@@ -1859,9 +1859,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7.2" data-path="../../../deploy/docker.html">
+        <li class="chapter " data-level="3.7.2" data-path="../deploy/docker.html">
             
-                <a href="../../../deploy/docker.html">
+                <a href="../deploy/docker.html">
             
                     
                     Docker部署
@@ -1912,9 +1912,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1.1.1" data-path="../../../modules/cache.html">
+        <li class="chapter " data-level="4.1.1.1" data-path="../modules/cache.html">
             
-                <a href="../../../modules/cache.html">
+                <a href="../modules/cache.html">
             
                     
                     数据缓存
@@ -1925,9 +1925,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.1.2" data-path="../../../modules/search.html">
+        <li class="chapter " data-level="4.1.1.2" data-path="../modules/search.html">
             
-                <a href="../../../modules/search.html">
+                <a href="../modules/search.html">
             
                     
                     全文检索
@@ -1938,9 +1938,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.1.3" data-path="../../../modules/rpc.html">
+        <li class="chapter " data-level="4.1.1.3" data-path="../modules/rpc.html">
             
-                <a href="../../../modules/rpc.html">
+                <a href="../modules/rpc.html">
             
                     
                     远程调用
@@ -1951,9 +1951,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.1.4" data-path="../../../modules/mq.html">
+        <li class="chapter " data-level="4.1.1.4" data-path="../modules/mq.html">
             
-                <a href="../../../modules/mq.html">
+                <a href="../modules/mq.html">
             
                     
                     消息队列
@@ -1964,9 +1964,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.1.5" data-path="../../../modules/tx.html">
+        <li class="chapter " data-level="4.1.1.5" data-path="../modules/tx.html">
             
-                <a href="../../../modules/tx.html">
+                <a href="../modules/tx.html">
             
                     
                     事务补偿
@@ -1982,9 +1982,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.2" data-path="../../../modules/dev.html">
+        <li class="chapter " data-level="4.1.2" data-path="../modules/dev.html">
             
-                <a href="../../../modules/dev.html">
+                <a href="../modules/dev.html">
             
                     
                     开发新的模块
@@ -2000,9 +2000,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../../../plugins/">
+        <li class="chapter " data-level="4.2" data-path="../plugins/">
             
-                <a href="../../../plugins/">
+                <a href="../plugins/">
             
                     
                     插件指南
@@ -2028,9 +2028,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.2.1.1" data-path="../../../plugins/dtc.html">
+        <li class="chapter " data-level="4.2.1.1" data-path="../plugins/dtc.html">
             
-                <a href="../../../plugins/dtc.html">
+                <a href="../plugins/dtc.html">
             
                     
                     分布式配置
@@ -2041,9 +2041,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2.1.2" data-path="../../../plugins/dtt.html">
+        <li class="chapter " data-level="4.2.1.2" data-path="../plugins/dtt.html">
             
-                <a href="../../../plugins/dtt.html">
+                <a href="../plugins/dtt.html">
             
                     
                     分布式跟踪
@@ -2054,9 +2054,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2.1.3" data-path="../../../plugins/reg.html">
+        <li class="chapter " data-level="4.2.1.3" data-path="../plugins/reg.html">
             
-                <a href="../../../plugins/reg.html">
+                <a href="../plugins/reg.html">
             
                     
                     服务注册发现
@@ -2067,9 +2067,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2.1.4" data-path="../../../plugins/flow.html">
+        <li class="chapter " data-level="4.2.1.4" data-path="../plugins/flow.html">
             
-                <a href="../../../plugins/flow.html">
+                <a href="../plugins/flow.html">
             
                     
                     流量控制
@@ -2080,9 +2080,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2.1.5" data-path="../../../plugins/monitor.html">
+        <li class="chapter " data-level="4.2.1.5" data-path="../plugins/monitor.html">
             
-                <a href="../../../plugins/monitor.html">
+                <a href="../plugins/monitor.html">
             
                     
                     服务监控
@@ -2093,9 +2093,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2.1.6" data-path="../../../plugins/health.html">
+        <li class="chapter " data-level="4.2.1.6" data-path="../plugins/health.html">
             
-                <a href="../../../plugins/health.html">
+                <a href="../plugins/health.html">
             
                     
                     健康检查
@@ -2111,9 +2111,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2.2" data-path="../../../plugins/dev.html">
+        <li class="chapter " data-level="4.2.2" data-path="../plugins/dev.html">
             
-                <a href="../../../plugins/dev.html">
+                <a href="../plugins/dev.html">
             
                     
                     开发新的插件
@@ -2136,9 +2136,9 @@
         
         
     
-        <li class="chapter " data-level="5.1" data-path="../../../cli/">
+        <li class="chapter " data-level="5.1" data-path="../cli/">
             
-                <a href="../../../cli/">
+                <a href="../cli/">
             
                     
                     命令行参考
@@ -2149,9 +2149,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.2" data-path="../../../faq.html">
+        <li class="chapter " data-level="5.2" data-path="../faq.html">
             
-                <a href="../../../faq.html">
+                <a href="../faq.html">
             
                     
                     常见问题
@@ -2196,16 +2196,99 @@
     
                                 <section class="normal markdown-section">
                                 
-<h1 id="&#x57FA;&#x7840;&#x6A21;&#x5757;">&#x57FA;&#x7840;&#x6A21;&#x5757;</h1>
-<p>&#x6838;&#x5FC3;&#x6A21;&#x5757;&#x7531;jmms&#x6846;&#x67B6;&#x5185;&#x7F6E;&#xFF0C;&#x63D0;&#x4F9B;&#x5FAE;&#x670D;&#x52A1;&#x8FD0;&#x884C;&#x7684;&#x57FA;&#x7840;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-01-16 </span> </footer>
+<h1 id="&#x6570;&#x636E;&#x805A;&#x5408;">&#x6570;&#x636E;&#x805A;&#x5408;</h1>
+<p>&#x6570;&#x636E;&#x805A;&#x5408;&#x7684;&#x53C2;&#x6570;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x987B;</th>
+<th style="text-align:left">&#x4F5C;&#x7528; </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aggregates</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td style="text-align:left">&#x805A;&#x5408;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;&#x7279;&#x5B9A;&#x7684;&#x8BED;&#x6CD5;&#x5B9E;&#x73B0;&#x5B57;&#x6BB5;&#x805A;&#x5408;</td>
+</tr>
+<tr>
+<td>groupby</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td style="text-align:left">&#x914D;&#x5408;&#x805A;&#x5408;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;&#xFF0C;&#x5BF9;&#x67D0;&#x4E9B;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;group by</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x805A;&#x5408;&#x8868;&#x8FBE;&#x5F0F;">&#x805A;&#x5408;&#x8868;&#x8FBE;&#x5F0F;</h3>
+<p>&#x5355;&#x4E2A;&#x5B57;&#x6BB5;&#x683C;&#x5F0F;&#xFF1A;aggregates=<code>{&#x805A;&#x5408;&#x51FD;&#x6570;}(&#x805A;&#x5408;&#x5B57;&#x6BB5;&#x540D;)[ &#x5B57;&#x6BB5;&#x522B;&#x540D;]</code></p>
+<blockquote>
+<p>&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#x4F7F;&#x7528;<code>,</code>&#x5206;&#x5272;</p>
+</blockquote>
+<p>&#x9ED8;&#x8BA4;&#x522B;&#x540D;&#xFF1A;<code>{&#x5B57;&#x6BB5;&#x540D;}{&#x51FD;&#x6570;&#x540D;}</code>&#xFF0C;&#x4F7F;&#x7528;<a href="http://wiki.c2.com/?LowerCamelCase" target="_blank">lower camel</a>&#x683C;&#x5F0F;</p>
+<p>Examples&#xFF1A;</p>
+<ul>
+<li>&#x8BA2;&#x5355;&#x91D1;&#x989D;&#x603B;&#x6570;&#xFF08;&#x9ED8;&#x8BA4;&#x522B;&#x540D;&#xFF09;&#xFF1A; <code>GET /order?aggregates=sum(amount)</code> </li>
+<li>&#x8BA2;&#x5355;&#x91D1;&#x989D;&#x603B;&#x6570;&#xFF08;&#x6307;&#x5B9A;&#x522B;&#x540D;&#xFF09;&#xFF1A; <code>GET /order?aggregates=sum(amount)</code></li>
+<li>&#x8BA2;&#x5355;&#x91D1;&#x989D;&#x603B;&#x6570;&#x548C;&#x5E73;&#x5747;&#x503C;&#xFF1A;<code>GET /order?aggregates=sum(amount), avg(amount)</code></li>
+</ul>
+<h4 id="&#x652F;&#x6301;&#x7684;&#x805A;&#x5408;&#x51FD;&#x6570;">&#x652F;&#x6301;&#x7684;&#x805A;&#x5408;&#x51FD;&#x6570;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x540D;</th>
+<th style="text-align:center">&#x683C;&#x5F0F;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sum</td>
+<td style="text-align:center">sum({name})</td>
+<td style="text-align:left">&#x53D6;&#x6C47;&#x603B;&#x503C;</td>
+</tr>
+<tr>
+<td>avg</td>
+<td style="text-align:center">avg({name})</td>
+<td style="text-align:left">&#x53D6;&#x5E73;&#x5747;&#x503C;</td>
+</tr>
+<tr>
+<td>min</td>
+<td style="text-align:center">min({name})</td>
+<td style="text-align:left">&#x53D6;&#x6700;&#x5C0F;&#x503C;</td>
+</tr>
+<tr>
+<td>max</td>
+<td style="text-align:center">max({name})</td>
+<td style="text-align:left">&#x53D6;&#x6700;&#x5927;&#x503C;</td>
+</tr>
+<tr>
+<td>count</td>
+<td style="text-align:center">count(*)</td>
+<td style="text-align:left">&#x53D6;&#x603B;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x522B;&#x540D;&#x4E3A;<code>total</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="gropuby">gropuby</h3>
+<p>&#x914D;&#x5408;<code>aggregates</code>&#x4F7F;&#x7528;&#xFF0C;&#x5728;&#x805A;&#x5408;&#x65F6;&#x6309;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x3002;</p>
+<p>&#x5355;&#x4E2A;&#x5B57;&#x6BB5;&#x683C;&#x5F0F;&#xFF1A;groupby=<code>{&#x805A;&#x5408;&#x5B57;&#x6BB5;&#x540D;}</code></p>
+<blockquote>
+<p>&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#x4F7F;&#x7528;<code>,</code>&#x5206;&#x5272;</p>
+</blockquote>
+<p>Examples:</p>
+<ul>
+<li>&#x6309;&#x4EA7;&#x54C1;&#x5206;&#x7C7B;&#x6C47;&#x603B;&#x8BA2;&#x5355;&#x91D1;&#x989D;&#xFF1A; <code>GET /order?aggregates=sum(amount)&amp;groupby=productCaregoryId</code> </li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-04-13 </span> </footer>
 <div class="ex-page-foot">
     <div class="ex-page-jump">
         
-        <span class="ex-jump-prev" style="display: block;">上一篇：<a href="../data_access.html">数据访问</a></span>
+        <span class="ex-jump-prev" style="display: block;">上一篇：<a href="sorting.html">数据排序</a></span>
         
         
-        <span class="ex-jump-next">下一篇：<a href="utils.html">utils</a></span>
+        <span class="ex-jump-next">下一篇：<a href="select.html">字段选择</a></span>
         
     </div>
 </div>
@@ -2240,38 +2323,38 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基础模块","level":"3.4.3.5","depth":3,"next":{"title":"utils","level":"3.4.3.5.1","depth":4,"path":"dev/js/modules/utils.md","ref":"dev/js/modules/utils.md","articles":[]},"previous":{"title":"数据访问","level":"3.4.3.4","depth":3,"path":"dev/js/data_access.md","ref":"dev/js/data_access.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/js/modules/README.md","mtime":"2018-01-16T01:43:40.108Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-13T06:01:58.158Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据聚合","level":"3.1.1.8","depth":3,"next":{"title":"字段选择","level":"3.1.1.9","depth":3,"path":"spec/select.md","ref":"spec/select.md","articles":[]},"previous":{"title":"数据排序","level":"3.1.1.7","depth":3,"path":"spec/sorting.md","ref":"spec/sorting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"spec/aggregation.md","mtime":"2018-04-13T05:53:50.501Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-13T06:01:58.158Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
 
         
-    <script src="../../../gitbook/gitbook.js"></script>
-    <script src="../../../gitbook/theme.js"></script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../../../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
         
     
 
