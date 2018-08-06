@@ -7,7 +7,7 @@
         <title>开发API操作 · jmms微服务设计开发指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -566,6 +566,19 @@
         <li class="chapter " data-level="3.1.1.10" data-path="../../spec/expand.html">
             
                 <a href="../../spec/expand.html">
+            
+                    
+                    展开查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="../../spec/joins.html">
+            
+                <a href="../../spec/joins.html">
             
                     
                     关联查询
@@ -2002,7 +2015,7 @@
 <p>&#x8DEF;&#x7531;&#x8BB0;&#x5F55;&#x53D8;&#x66F4;&#x4E3A;&#xFF1A;</p>
 <pre class="language-"><code>GET     /hello          spring:HelloController.hello()
 </code></pre><p>&#x518D;&#x6B21;&#x8BBF;&#x95EE;<a href="http://localhost:8080/hello" target="_blank">http://localhost:8080/hello</a>&#x8FD4;&#x56DE;&#x7684;&#x662F;<code>Hello world!</code>&#x3002;</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2017-12-22 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-07-23 </span> </footer>
 <div class="ex-page-foot">
     <div class="ex-page-jump">
         
@@ -2044,7 +2057,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"开发API操作","level":"3.4.3.2","depth":3,"next":{"title":"实体定义","level":"3.4.3.3","depth":3,"path":"dev/spring/entity.md","ref":"dev/spring/entity.md","articles":[{"title":"定义表名","level":"3.4.3.3.1","depth":4,"path":"dev/spring/entity_table.md","ref":"dev/spring/entity_table.md","articles":[]},{"title":"定义字段","level":"3.4.3.3.2","depth":4,"path":"dev/spring/entity_column.md","ref":"dev/spring/entity_column.md","articles":[]},{"title":"定义关系","level":"3.4.3.3.3","depth":4,"path":"dev/spring/entity_relation.md","ref":"dev/spring/entity_relation.md","articles":[]}]},"previous":{"title":"初始化工程","level":"3.4.3.1","depth":3,"path":"dev/spring/init_proj.md","ref":"dev/spring/init_proj.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/spring/api_operation.md","mtime":"2017-12-22T14:04:34.734Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-11T02:51:33.447Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"开发API操作","level":"3.4.3.2","depth":3,"next":{"title":"实体定义","level":"3.4.3.3","depth":3,"path":"dev/spring/entity.md","ref":"dev/spring/entity.md","articles":[{"title":"定义表名","level":"3.4.3.3.1","depth":4,"path":"dev/spring/entity_table.md","ref":"dev/spring/entity_table.md","articles":[]},{"title":"定义字段","level":"3.4.3.3.2","depth":4,"path":"dev/spring/entity_column.md","ref":"dev/spring/entity_column.md","articles":[]},{"title":"定义关系","level":"3.4.3.3.3","depth":4,"path":"dev/spring/entity_relation.md","ref":"dev/spring/entity_relation.md","articles":[]}]},"previous":{"title":"初始化工程","level":"3.4.3.1","depth":3,"path":"dev/spring/init_proj.md","ref":"dev/spring/init_proj.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/spring/api_operation.md","mtime":"2018-07-23T02:14:30.914Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-06T09:42:59.848Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -7,7 +7,7 @@
         <title>log · jmms微服务设计开发指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -566,6 +566,19 @@
         <li class="chapter " data-level="3.1.1.10" data-path="../../../spec/expand.html">
             
                 <a href="../../../spec/expand.html">
+            
+                    
+                    展开查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="../../../spec/joins.html">
+            
+                <a href="../../../spec/joins.html">
             
                     
                     关联查询
@@ -2024,7 +2037,7 @@ log<span class="token punctuation">.</span><span class="token function">debug</s
 <li><code>...args</code> {any} &#x65E5;&#x5FD7;&#x5185;&#x5BB9;&#x4E2D;&#x5360;&#x4F4D;&#x7B26;<code>{}</code>&#x5BF9;&#x5E94;&#x7684;&#x503C;</li>
 </ul>
 <p>&#x6253;&#x5370;&#x9519;&#x8BEF;&#x7EA7;&#x522B;&#x65E5;&#x5FD7;&#x3002;<code>message</code>&#x4E2D;&#x7684;&#x5360;&#x4F4D;&#x7B26;<code>{}</code>&#x4F1A;&#x6309;&#x51FA;&#x73B0;&#x7684;&#x987A;&#x5E8F;&#x88AB;<code>...args</code>&#x4E2D;&#x7684;&#x503C;&#x66FF;&#x6362;&#x3002;</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2017-11-22 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-07-23 </span> </footer>
 <div class="ex-page-foot">
     <div class="ex-page-jump">
         
@@ -2066,7 +2079,7 @@ log<span class="token punctuation">.</span><span class="token function">debug</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"log","level":"3.4.2.2.2","depth":4,"next":{"title":"env","level":"3.4.2.2.3","depth":4,"path":"dev/js/vars/env.md","ref":"dev/js/vars/env.md","articles":[]},"previous":{"title":"console","level":"3.4.2.2.1","depth":4,"path":"dev/js/vars/console.md","ref":"dev/js/vars/console.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/js/vars/log.md","mtime":"2017-11-22T04:09:45.414Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-11T02:51:33.447Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"log","level":"3.4.2.2.2","depth":4,"next":{"title":"env","level":"3.4.2.2.3","depth":4,"path":"dev/js/vars/env.md","ref":"dev/js/vars/env.md","articles":[]},"previous":{"title":"console","level":"3.4.2.2.1","depth":4,"path":"dev/js/vars/console.md","ref":"dev/js/vars/console.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/js/vars/log.md","mtime":"2018-07-23T02:14:30.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-06T09:42:59.848Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

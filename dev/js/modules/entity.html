@@ -7,7 +7,7 @@
         <title>{Entity} · jmms微服务设计开发指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -566,6 +566,19 @@
         <li class="chapter " data-level="3.1.1.10" data-path="../../../spec/expand.html">
             
                 <a href="../../../spec/expand.html">
+            
+                    
+                    展开查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="../../../spec/joins.html">
+            
+                <a href="../../../spec/joins.html">
             
                     
                     关联查询
@@ -2021,7 +2034,21 @@ dao<span class="token punctuation">.</span><span class="token function">executeU
 <li>Returns {Object} &#x884C;&#x8BB0;&#x5F55;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x8FD4;&#x56DE;<code>null</code></li>
 </ul>
 <p>&#x67E5;&#x8BE2;&#x5B9E;&#x4F53;&#x67D0;&#x4E00;&#x884C;&#x8BB0;&#x5F55;&#xFF0C;&#x8BB0;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#x8FD4;&#x56DE;<code>null</code>&#x3002;</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-01-16 </span> </footer>
+<h4 id="entityqueryoptions">{Entity}.query(options)</h4>
+<p>Added in:v.4.0</p>
+<ul>
+<li>options {QueryOptions } &#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;QueryOptions&#x5BF9;&#x8C61;&#x89C1;&#xFF1A;<a href="http://leapframework.org/doc/api/data/query/" target="_blank">&#x5B9E;&#x4F53;&#x67E5;&#x8BE2;</a></li>
+<li>Returns {QueryListResult} &#x67E5;&#x8BE2;&#x8BB0;&#x5F55;&#x96C6;</li>
+</ul>
+<p>&#x6839;&#x636E;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x67E5;&#x8BE2;&#x5B9E;&#x4F53;&#x6570;&#x636E;</p>
+<h4 id="entityquerylistoptions">{Entity}.queryList(options)</h4>
+<p>Added in:v.4.0</p>
+<ul>
+<li>options {QueryOptions } &#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;QueryOptions&#x5BF9;&#x8C61;&#x89C1;&#xFF1A;<a href="http://leapframework.org/doc/api/data/query/" target="_blank">&#x5B9E;&#x4F53;&#x67E5;&#x8BE2;</a></li>
+<li>Returns {List<object>} &#x67E5;&#x8BE2;&#x8BB0;&#x5F55;&#x5217;&#x8868;</object></li>
+</ul>
+<p>&#x6839;&#x636E;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x67E5;&#x8BE2;&#x5B9E;&#x4F53;&#x6570;&#x636E;</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <em>Bingosoft</em> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2018-07-23 </span> </footer>
 <div class="ex-page-foot">
     <div class="ex-page-jump">
         
@@ -2063,7 +2090,7 @@ dao<span class="token punctuation">.</span><span class="token function">executeU
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"{Entity}","level":"3.4.2.5.3","depth":4,"next":{"title":"http","level":"3.4.2.5.4","depth":4,"path":"dev/js/modules/http.md","ref":"dev/js/modules/http.md","articles":[]},"previous":{"title":"dao","level":"3.4.2.5.2","depth":4,"path":"dev/js/modules/dao.md","ref":"dev/js/modules/dao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/js/modules/entity.md","mtime":"2018-01-16T06:05:18.381Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-11T02:51:33.447Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"{Entity}","level":"3.4.2.5.3","depth":4,"next":{"title":"http","level":"3.4.2.5.4","depth":4,"path":"dev/js/modules/http.md","ref":"dev/js/modules/http.md","articles":[]},"previous":{"title":"dao","level":"3.4.2.5.2","depth":4,"path":"dev/js/modules/dao.md","ref":"dev/js/modules/dao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","include-codeblock","cuav-chapters","back-to-top-button","advanced-emoji","page-footer-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"page-footer-ex":{"copyright":"<em>Bingosoft</em>","markdown":false,"update_format":"YYYY-MM-DD","update_label":"<i>updated</i>"},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jmms微服务设计开发指南","gitbook":"*"},"file":{"path":"dev/js/modules/entity.md","mtime":"2018-07-23T02:14:30.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-06T09:42:59.848Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
